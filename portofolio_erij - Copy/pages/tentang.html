@@ -1,0 +1,202 @@
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Saya — Portofolio Erij</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/tentang.css">
+</head>
+<body class="page-tentang">
+
+  <!-- HAMBURGER -->
+  <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar" id="sidebar" aria-hidden="true">
+    <button class="sidebar-close" id="sidebarClose">✕</button>
+    <div class="sidebar-content">
+      <p class="sidebar-label">NAVIGASI</p>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="../index.html" class="nav-link">
+            <span class="nav-num">00</span>
+            <span class="nav-text">Beranda</span>
+          </a>
+        </li>
+        <li>
+          <a href="tentang.html" class="nav-link nav-link--active">
+            <span class="nav-num">01</span>
+            <span class="nav-text">Tentang Saya</span>
+          </a>
+        </li>
+        <li class="nav-item-karya">
+          <div class="nav-link nav-link--parent" id="karyaToggle">
+            <span class="nav-num">02</span>
+            <span class="nav-text">Karya</span>
+            <span class="nav-arrow">↓</span>
+          </div>
+          <ul class="nav-sub" id="karyaSub">
+            <li><a href="karya-desain.html" class="nav-sub-link"><span class="sub-dot">●</span> Desain</a></li>
+            <li><a href="karya-tulisan.html" class="nav-sub-link"><span class="sub-dot">●</span> Tulisan</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar-footer"><p>© 2025 Portofolio Erij</p></div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="tentang-wrap">
+
+    <!-- HERO KECIL -->
+    <section class="tentang-hero fade-up">
+      <div class="tentang-hero__photo">
+        <!-- Ganti src dengan foto kamu, simpan di assets/foto-profil.jpg -->
+        <img src="../assets/foto-profil.jpg" alt="Foto Erij Karimah"
+             onerror="this.src=''; this.parentElement.classList.add('photo--fallback')">
+        <div class="photo-ring"></div>
+      </div>
+      <div class="tentang-hero__text">
+        <p class="tentang-label">HALO, SAYA</p>
+        <h1 class="tentang-nama">Erij Karimah<span class="nama-dot">.</span></h1>
+        <p class="tentang-tagline">Fresh Graduate Hukum Tata Negara &nbsp;✦&nbsp; Desainer &nbsp;✦&nbsp; Storyteller</p>
+        <a href="../assets/cv-erij.pdf" class="btn-cv" download>
+          ↓ Unduh CV
+        </a>
+      </div>
+    </section>
+
+    <!-- BIO -->
+    <section class="section-card fade-up">
+      <div class="card-label">✦ TENTANG</div>
+      <p class="bio-text">
+        Saya adalah lulusan Hukum Tata Negara dari UIN Sunan Ampel Surabaya yang percaya bahwa hukum dan kreativitas bisa berjalan beriringan. Di luar dokumen hukum, saya suka bercerita lewat desain, tulisan, dan hal-hal kecil yang bermakna — termasuk merajut, memasak, dan memainkan alat musik.
+      </p>
+      <p class="bio-text" style="margin-top: 12px;">
+        Saat ini aktif mencari peluang di bidang administrasi dan manajemen, khususnya di perusahaan energi, pertambangan, dan sektor profesional di area Jabodetabek.
+      </p>
+    </section>
+
+    <!-- SKILL & HOBI (dua kolom) -->
+    <div class="two-col fade-up">
+
+      <!-- SKILL -->
+      <section class="section-card">
+        <div class="card-label">⚡ SKILL</div>
+        <ul class="skill-list">
+          <li class="skill-item">
+            <span class="skill-name">Administrasi & Dokumentasi</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-name">Desain Grafis (Photoshop, Illustrator, Canva)</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-name">Manajemen Event & Organisasi</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-name">Microsoft Office</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-name">Penulisan & Riset Hukum</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- HOBI -->
+      <section class="section-card">
+        <div class="card-label">🌸 HOBI & KEPRIBADIAN</div>
+        <div class="hobi-grid">
+          <div class="hobi-item">🧶 Merajut</div>
+          <div class="hobi-item">🍳 Memasak</div>
+          <div class="hobi-item">🎵 Musik</div>
+          <div class="hobi-item">🏃 Olahraga</div>
+          <div class="hobi-item">🎨 Desain</div>
+          <div class="hobi-item">📖 Menulis</div>
+        </div>
+        <p class="hobi-desc">Saya percaya hal-hal kecil sehari-hari menyimpan cerita yang layak diabadikan.</p>
+      </section>
+
+    </div>
+
+    <!-- PENDIDIKAN & PENGALAMAN -->
+    <section class="section-card fade-up">
+      <div class="card-label">🎓 PENDIDIKAN & PENGALAMAN</div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2020 – 2024</span>
+            <h3 class="timeline-title">S1 Hukum Tata Negara</h3>
+            <p class="timeline-place">UIN Sunan Ampel Surabaya</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023</span>
+            <h3 class="timeline-title">Volunteer SPV Desain</h3>
+            <p class="timeline-place">Icoslaw — memimpin tim desain event</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022 – 2023</span>
+            <h3 class="timeline-title">Magang Administrasi</h3>
+            <p class="timeline-place">— isi dengan tempat magang kamu —</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2021 – sekarang</span>
+            <h3 class="timeline-title">Freelance Desainer Grafis</h3>
+            <p class="timeline-place">Adobe Photoshop · Illustrator · Canva</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="section-card section-kontak fade-up">
+      <div class="card-label">📬 HUBUNGI SAYA</div>
+      <div class="kontak-grid">
+        <a href="mailto:erij@email.com" class="kontak-item">
+          <span class="kontak-icon">✉️</span>
+          <span>erij@email.com</span>
+        </a>
+        <a href="https://linkedin.com/in/erij" target="_blank" class="kontak-item">
+          <span class="kontak-icon">💼</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://instagram.com/erij" target="_blank" class="kontak-item">
+          <span class="kontak-icon">📸</span>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

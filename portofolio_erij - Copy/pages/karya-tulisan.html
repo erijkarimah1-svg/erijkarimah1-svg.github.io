@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karya Tulisan — Portofolio Erij</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/karya.css">
+</head>
+<body class="page-karya">
+
+  <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="overlay" id="overlay"></div>
+
+  <nav class="sidebar" id="sidebar" aria-hidden="true">
+    <button class="sidebar-close" id="sidebarClose">✕</button>
+    <div class="sidebar-content">
+      <p class="sidebar-label">NAVIGASI</p>
+      <ul class="sidebar-nav">
+        <li><a href="../index.html" class="nav-link"><span class="nav-num">00</span><span class="nav-text">Beranda</span></a></li>
+        <li><a href="tentang.html" class="nav-link"><span class="nav-num">01</span><span class="nav-text">Tentang Saya</span></a></li>
+        <li class="nav-item-karya">
+          <div class="nav-link nav-link--parent" id="karyaToggle">
+            <span class="nav-num">02</span><span class="nav-text">Karya</span><span class="nav-arrow">↓</span>
+          </div>
+          <ul class="nav-sub" id="karyaSub">
+            <li><a href="karya-desain.html" class="nav-sub-link"><span class="sub-dot">●</span> Desain</a></li>
+            <li><a href="karya-tulisan.html" class="nav-sub-link nav-sub-link--active"><span class="sub-dot">●</span> Tulisan</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar-footer"><p>© 2025 Portofolio Erij</p></div>
+  </nav>
+
+  <main class="karya-wrap">
+
+    <section class="karya-header fade-up">
+      <div class="karya-header__tabs">
+        <a href="karya-desain.html" class="tab">🎨 Desain</a>
+        <a href="karya-tulisan.html" class="tab tab--active">✍️ Tulisan</a>
+      </div>
+      <div class="karya-header__text">
+        <p class="karya-label">KARYA SAYA</p>
+        <h1 class="karya-judul">Tulisan<span class="judul-dot">.</span></h1>
+        <p class="karya-sub">Esai, opini, dan catatan — karena setiap hal kecil layak untuk diceritakan.</p>
+      </div>
+    </section>
+
+    <!-- FILTER TULISAN -->
+    <div class="filter-wrap fade-up">
+      <button class="filter-btn filter-btn--active" data-filter="semua">Semua</button>
+      <button class="filter-btn" data-filter="opini">Opini</button>
+      <button class="filter-btn" data-filter="esai">Esai</button>
+      <button class="filter-btn" data-filter="hukum">Hukum</button>
+      <button class="filter-btn" data-filter="personal">Personal</button>
+    </div>
+
+    <!-- LIST TULISAN -->
+    <section class="tulisan-list" id="tulisanList">
+
+      <article class="tulisan-item fade-up" data-tag="hukum">
+        <div class="tulisan-meta">
+          <span class="tulisan-tag-label">Hukum</span>
+          <span class="tulisan-date">2024</span>
+        </div>
+        <h3 class="tulisan-judul">Demokrasi dan Partisipasi Publik dalam Pembentukan Undang-Undang</h3>
+        <p class="tulisan-ringkasan">
+          Refleksi atas dinamika legislasi di Indonesia — bagaimana suara masyarakat seharusnya menjadi bagian nyata dari proses hukum, bukan sekadar formalitas.
+        </p>
+        <!-- Ganti href dengan link tulisanmu yang sebenarnya -->
+        <a href="#" class="tulisan-link">Baca selengkapnya →</a>
+      </article>
+
+      <article class="tulisan-item fade-up" data-tag="esai">
+        <div class="tulisan-meta">
+          <span class="tulisan-tag-label">Esai</span>
+          <span class="tulisan-date">2024</span>
+        </div>
+        <h3 class="tulisan-judul">Belajar Diam di Tengah Keramaian</h3>
+        <p class="tulisan-ringkasan">
+          Tentang kebiasaan introvert yang ternyata menjadi kekuatan — dan bagaimana diam bukan berarti tidak hadir.
+        </p>
+        <a href="#" class="tulisan-link">Baca selengkapnya →</a>
+      </article>
+
+      <article class="tulisan-item fade-up" data-tag="opini">
+        <div class="tulisan-meta">
+          <span class="tulisan-tag-label">Opini</span>
+          <span class="tulisan-date">2023</span>
+        </div>
+        <h3 class="tulisan-judul">Perempuan, Karir, dan Stigma yang Tidak Perlu</h3>
+        <p class="tulisan-ringkasan">
+          Opini tentang ekspektasi sosial terhadap perempuan yang berambisi — dan kenapa ambisi bukanlah sesuatu yang perlu dimaklumi.
+        </p>
+        <a href="#" class="tulisan-link">Baca selengkapnya →</a>
+      </article>
+
+      <article class="tulisan-item fade-up" data-tag="personal">
+        <div class="tulisan-meta">
+          <span class="tulisan-tag-label">Personal</span>
+          <span class="tulisan-date">2023</span>
+        </div>
+        <h3 class="tulisan-judul">Surat untuk Diri yang Hampir Menyerah</h3>
+        <p class="tulisan-ringkasan">
+          Catatan perjalanan melewati masa kuliah yang tidak selalu mudah — tentang jatuh, bangkit, dan menemukan arah kembali.
+        </p>
+        <a href="#" class="tulisan-link">Baca selengkapnya →</a>
+      </article>
+
+      <article class="tulisan-item fade-up" data-tag="hukum">
+        <div class="tulisan-meta">
+          <span class="tulisan-tag-label">Hukum</span>
+          <span class="tulisan-date">2023</span>
+        </div>
+        <h3 class="tulisan-judul">Urgensi Literasi Hukum bagi Generasi Muda</h3>
+        <p class="tulisan-ringkasan">
+          Mengapa memahami hukum bukan hanya urusan pengacara — dan bagaimana pengetahuan hukum dasar bisa melindungi siapa saja.
+        </p>
+        <a href="#" class="tulisan-link">Baca selengkapnya →</a>
+      </article>
+
+      <article class="tulisan-item fade-up" data-tag="esai">
+        <div class="tulisan-meta">
+          <span class="tulisan-tag-label">Esai</span>
+          <span class="tulisan-date">2022</span>
+        </div>
+        <h3 class="tulisan-judul">Merajut sebagai Meditasi</h3>
+        <p class="tulisan-ringkasan">
+          Dari benang dan jarum, saya belajar sabar, fokus, dan menerima ketidaksempurnaan — pelajaran yang ternyata berlaku di luar pola rajutan.
+        </p>
+        <a href="#" class="tulisan-link">Baca selengkapnya →</a>
+      </article>
+
+    </section>
+
+  </main>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/karya.js"></script>
+</body>
+</html>

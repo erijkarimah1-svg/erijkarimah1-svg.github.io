@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HAMBURGER BUTTON -->
+  <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- SIDEBAR OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+<!-- SIDEBAR MENU -->
+  <nav class="sidebar" id="sidebar" aria-hidden="true">
+    <button class="sidebar-close" id="sidebarClose">✕</button>
+    <div class="sidebar-content">
+      <p class="sidebar-label">NAVIGASI</p>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="pages/tentang.html" class="nav-link">
+            <span class="nav-num">01</span>
+            <span class="nav-text">Tentang Saya</span>
+          </a>
+        </li>
+        <li class="nav-item-karya">
+          <div class="nav-link nav-link--parent" id="karyaToggle">
+            <span class="nav-num">02</span>
+            <span class="nav-text">Karya</span>
+            <span class="nav-arrow">↓</span>
+          </div>
+          <ul class="nav-sub" id="karyaSub">
+            <li><a href="pages/karya-desain.html" class="nav-sub-link"><span class="sub-dot">●</span> Desain</a></li>
+            <li><a href="pages/karya-tulisan.html" class="nav-sub-link"><span class="sub-dot">●</span> Tulisan</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar-footer"><p>© 2025 Portofolio</p></div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <main class="hero">
+    <div class="hero-bg">
+      <img src="assets/hero-image.png" alt="Hero" class="hero-img" id="heroImg"
+           onerror="this.parentElement.classList.add('hero-bg--fallback')">
+    </div>
+    <div class="hero-text">
+      <h1 class="hero-jp fade-up">ポートフォリ</h1>
+      <p class="hero-en fade-up delay-1">PORTOFOLIO</p>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
